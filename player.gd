@@ -26,9 +26,9 @@ func _input(event):
 			last_keycode = event.keycode
 	doubletap_time = DOUBLETAP_DELAY
 	
-func _physics_process(delta):
-	var direction_horizontal := Input.get_axis("ui_left","ui_right")
-	var direction_vertical := Input.get_axis("ui_up","ui_down")
+func _physics_process(_delta):
+	var direction_horizontal := Input.get_axis("left_axis","right_axis")
+	var direction_vertical := Input.get_axis("up_axis","down_axis")
 	if direction_horizontal:
 		velocity.x = direction_horizontal * SPEED
 		if velocity.x < 0 :
