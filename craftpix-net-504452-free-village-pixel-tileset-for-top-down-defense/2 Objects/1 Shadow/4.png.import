@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq8au57vxupjn"
-path="res://.godot/imported/8-Bit-Character-1.png-34a9400e3978688fb5ada4075aae65d9.ctex"
+uid="uid://crre74gsfeovf"
+path="res://.godot/imported/4.png-1b5e4de6007914ded0d56e00d5a6b342.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://8-Bit-Character-1.png"
-dest_files=["res://.godot/imported/8-Bit-Character-1.png-34a9400e3978688fb5ada4075aae65d9.ctex"]
+source_file="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/2 Objects/1 Shadow/4.png"
+dest_files=["res://.godot/imported/4.png-1b5e4de6007914ded0d56e00d5a6b342.ctex"]
 
 [params]
 
