@@ -46,12 +46,13 @@ func _physics_process(_delta):
 				anim.play("idle_"+direction_anim)
 	if direction_vertical:
 		velocity.y = direction_vertical * SPEED
-		if velocity.y >0 :
-			anim.play("walk_front")
-			direction_anim = "front"
-		else :
-			anim.play("walk_back")
-			direction_anim = "back"
+		if anim.animation != "walk_left" && anim.animation != "walk_right" :
+			if velocity.y >0 :
+				anim.play("walk_front")
+				direction_anim = "front"
+			else :
+				anim.play("walk_back")
+				direction_anim = "back"
 	else :
 		if doubletap :
 			velocity.y = move_toward(velocity.y*DASH_SPEED, 0, SPEED)

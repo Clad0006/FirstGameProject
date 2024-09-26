@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://bmpi0nv1x3xfh"]
+[gd_scene load_steps=37 format=4 uid="uid://bmpi0nv1x3xfh"]
 
 [ext_resource type="PackedScene" uid="uid://c32mmxmpmlm13" path="res://player.tscn" id="1_8er30"]
 [ext_resource type="Texture2D" uid="uid://cs4aappg6lixc" path="res://craftpix-net-504452-free-village-pixel-tileset-for-top-down-defense/1 Tiles/FieldsTileset.png" id="1_81mam"]
