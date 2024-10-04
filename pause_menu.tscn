@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://icm0nj1umtex"]
+
+[ext_resource type="FontFile" uid="uid://bbbntyxh4iuuu" path="res://dodge_the_creeps_2d_assets/dodge_the_creeps_2d_assets/fonts/Xolonium-Regular.ttf" id="1_osmym"]
+[ext_resource type="Script" path="res://PauseMenu.cs" id="1_qdrkc"]
+
+[node name="pause_menu" type="CanvasLayer"]
+script = ExtResource("1_qdrkc")
+
+[node name="ContinueButton" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -225.0
+offset_top = 75.0
+offset_right = 225.0
+offset_bottom = 175.0
+grow_horizontal = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_osmym")
+theme_override_font_sizes/font_size = 64
+text = "Continuer"
+
+[node name="SaveButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -50.0
+offset_right = 225.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_osmym")
+theme_override_font_sizes/font_size = 64
+text = "Sauvegarder"
+
+[node name="QuitButton" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -225.0
+offset_top = -173.0
+offset_right = 225.0
+offset_bottom = -73.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_osmym")
+theme_override_font_sizes/font_size = 64
+text = "Quitter"
+
+[connection signal="pressed" from="ContinueButton" to="." method="OnContinueButtonPressed"]
+[connection signal="pressed" from="SaveButton" to="." method="OnSaveButtonPressed"]
+[connection signal="pressed" from="QuitButton" to="." method="OnQuitButtonPressed"]
