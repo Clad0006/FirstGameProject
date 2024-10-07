@@ -2,8 +2,6 @@ using Godot;
 using Godot.Collections;
 using FileAccess = Godot.FileAccess;
 
-namespace FirstGameProject;
-
 public partial class SaveManager : Node
 {
 	private static SaveManager _instance;
@@ -21,6 +19,7 @@ public partial class SaveManager : Node
 		
 		FileAccess saveFile = FileAccess.Open(path, FileAccess.ModeFlags.Write);
 		
+		GD.Print(GetTree().Root);
 		Array<Node> savableNodes = GetTree().GetNodesInGroup("Savable");
 		GD.Print(savableNodes);
 		foreach (Node savable in savableNodes)
