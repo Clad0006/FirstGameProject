@@ -4,13 +4,12 @@ using FileAccess = Godot.FileAccess;
 
 public partial class SaveManager : Node
 {
-	private static SaveManager _instance;
+	public static SaveManager Instance { get; private set; }
 
-	public static SaveManager Get()
+	public override void _Ready()
 	{
-		if (_instance == null) _instance = new SaveManager();
-		
-		return _instance;
+		Instance = this;
+		GD.Print("SaveManager ready");
 	}
 
 	public void Save(string path)
@@ -52,6 +51,7 @@ public partial class SaveManager : Node
 		while (saveFile.GetPosition() < saveFile.GetLength())
 		{
 			string jsonString = saveFile.GetLine();
+			GD.Print(jsonString);
 
 			Json json = new Json();
 			Error parseResult = json.Parse(jsonString);

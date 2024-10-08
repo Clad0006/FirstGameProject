@@ -10,7 +10,7 @@ public partial class LevelManager : Node
 	
 	public override void _Ready()
 	{
-		GD.Print("Ready");
+		GD.Print("LevelManager ready");
 		Instance = this;
 	}
 

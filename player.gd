@@ -30,10 +30,10 @@ func _input(event):
 	
 	# Debug
 	if Input.is_action_just_pressed("save_debug"):
-		SaveManager.Get().Save("user://savegame.save")
+		get_tree().GetSaveManager().Save("user://savegame.save")
 		
 	if Input.is_action_just_pressed("load_debug"):
-		SaveManager.Get().Load("user://savegame.save")
+		get_tree().GetSaveManager().Load("user://savegame.save")
 	
 func _physics_process(_delta):
 	var direction_horizontal := Input.get_axis("left_axis","right_axis")
