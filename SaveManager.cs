@@ -34,6 +34,8 @@ public partial class SaveManager : Node
 			string jsonString = Json.Stringify(nodeData);
 			saveFile.StoreLine(jsonString);
 		}
+		
+		saveFile.Close();
 	}
 
 	public void Load(string path)
@@ -47,19 +49,26 @@ public partial class SaveManager : Node
 		}
 		
 		FileAccess saveFile = FileAccess.Open(path, FileAccess.ModeFlags.Read);
-
+		
+		GD.Print(saveFile.GetLength());
 		while (saveFile.GetPosition() < saveFile.GetLength())
 		{
 			string jsonString = saveFile.GetLine();
-			GD.Print(jsonString);
 
 			Json json = new Json();
 			Error parseResult = json.Parse(jsonString);
-			if (parseResult != Error.Ok) continue;
+			if (parseResult != Error.Ok)
+			{
+				GD.Print(parseResult);
+				continue;
+			}
 			
 			var nodeData = new Godot.Collections.Dictionary<string, Variant>((Godot.Collections.Dictionary)json.Data);
-			Node player = GetTree().GetNodesInGroup("player")[0];
+			Node player = GetTree().GetNodesInGroup("Savable")[0];
+			GD.Print(player);
 			player.Set(Node2D.PropertyName.Position, new Vector2((float)nodeData["pos_x"], (float)nodeData["pos_y"]));
 		}
+		
+		saveFile.Close();
 	}
 }

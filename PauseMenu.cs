@@ -20,7 +20,8 @@ public partial class PauseMenu : CanvasLayer
 	
 	private void OnSaveButtonPressed()
 	{
-		//SaveManager.Instance.save()
+		var customMainLoop = (CustomMainLoop)GetTree();
+		customMainLoop.GetSaveManager().Save("user://savegame.save");
 	}
 	
 	private void OnQuitButtonPressed()
