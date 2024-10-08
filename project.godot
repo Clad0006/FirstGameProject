@@ -17,7 +17,7 @@ config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 
 [autoload]
 
-LevelManager="*res://LevelManager.cs"
+LevelManager="res://LevelManager.cs"
 
 [dotnet]
 

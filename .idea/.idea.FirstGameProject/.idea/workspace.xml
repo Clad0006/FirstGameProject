@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a47f4cdc-fe60-4913-ac1e-a1ac977cc0e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomMainLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CustomMainLoop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.gd" beforeDir="false" afterPath="$PROJECT_DIR$/player.gd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CustomMainLoop.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -34,7 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Executable.Player.executor": "Debug",
+    ".NET Executable.Player.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "MainLoop",
     "node.js.detected.package.eslint": "true",
@@ -96,6 +99,8 @@
       <workItem from="1728060619873" duration="26000" />
       <workItem from="1728162915506" duration="30000" />
       <workItem from="1728331171305" duration="873000" />
+      <workItem from="1728397769407" duration="42000" />
+      <workItem from="1728398008589" duration="2450000" />
     </task>
     <servers />
   </component>
