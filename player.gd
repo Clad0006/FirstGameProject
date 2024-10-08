@@ -25,6 +25,8 @@ func _input(event):
 		else :
 			last_keycode = event.keycode
 	doubletap_time = DOUBLETAP_DELAY
+	if event.is_action_pressed("escape"):
+		LevelManager.LoadLevel("pause_menu.tscn",false)
 	
 func _physics_process(_delta):
 	var direction_horizontal := Input.get_axis("left_axis","right_axis")
