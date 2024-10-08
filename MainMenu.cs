@@ -5,6 +5,6 @@ public partial class MainMenu : CanvasLayer
 	private void OnStartButtonPressed()
 	{
 		var customMainLoop = (CustomMainLoop)GetTree();
-		customMainLoop.GetLevelManager().LoadLevel("main_menu.tscn");
+		customMainLoop.GetLevelManager().LoadLevel("main_game.tscn");
 	}
 }

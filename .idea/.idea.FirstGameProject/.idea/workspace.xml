@@ -7,9 +7,7 @@
     <list default="true" id="a47f4cdc-fe60-4913-ac1e-a1ac977cc0e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstGameProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CustomMainLoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CustomMainLoop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.gd" beforeDir="false" afterPath="$PROJECT_DIR$/player.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +37,7 @@
   "keyToString": {
     ".NET Executable.Player.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "MainLoop",
+    "git-widget-placeholder": "mainloop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
