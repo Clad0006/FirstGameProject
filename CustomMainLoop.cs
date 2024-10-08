@@ -8,8 +8,9 @@ public partial class CustomMainLoop : SceneTree
     
     public override void _Initialize()
     {
-        base._Initialize();
         LevelManager = new LevelManager();
+        GetRoot().AddChild(LevelManager);
+        base._Initialize();
         GD.Print("CustomMainLoop initialized");
     }
     

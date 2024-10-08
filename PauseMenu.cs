@@ -7,13 +7,15 @@ public partial class PauseMenu : CanvasLayer
 	{
 		if (@event.IsActionPressed("escape"))
 		{
-			LevelManager.Instance.LoadLevel("main_game.tscn");
+			var customMainLoop = (CustomMainLoop)GetTree();
+			customMainLoop.GetLevelManager().LoadLevel("main_game.tscn");
 		}
 	}
 
 	private void OnContinueButtonPressed()
 	{
-		LevelManager.Instance.LoadLevel("main_game.tscn");
+		var customMainLoop = (CustomMainLoop)GetTree();
+		customMainLoop.GetLevelManager().LoadLevel("main_game.tscn");
 	}
 	
 	private void OnSaveButtonPressed()
@@ -23,6 +25,7 @@ public partial class PauseMenu : CanvasLayer
 	
 	private void OnQuitButtonPressed()
 	{
-		LevelManager.Instance.LoadLevel("main_menu.tscn");
+		var customMainLoop = (CustomMainLoop)GetTree();
+		customMainLoop.GetLevelManager().LoadLevel("main_menu.tscn");
 	}
 }

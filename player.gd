@@ -26,7 +26,6 @@ func _input(event):
 			last_keycode = event.keycode
 	doubletap_time = DOUBLETAP_DELAY
 	if event.is_action_pressed("escape"):
-		#LevelManager.LoadLevel("pause_menu.tscn",false)
 		get_tree().GetLevelManager().LoadLevel("pause_menu.tscn",false)
 	
 func _physics_process(_delta):
