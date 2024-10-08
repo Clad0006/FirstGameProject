@@ -28,6 +28,13 @@ func _input(event):
 	if event.is_action_pressed("escape"):
 		get_tree().GetLevelManager().LoadLevel("pause_menu.tscn",false)
 	
+	# Debug
+	if Input.is_action_just_pressed("save_debug"):
+		SaveManager.Get().Save("user://savegame.save")
+		
+	if Input.is_action_just_pressed("load_debug"):
+		SaveManager.Get().Load("user://savegame.save")
+	
 func _physics_process(_delta):
 	var direction_horizontal := Input.get_axis("left_axis","right_axis")
 	var direction_vertical := Input.get_axis("up_axis","down_axis")
@@ -64,3 +71,10 @@ func _physics_process(_delta):
 				anim.play("idle_"+direction_anim)
 	move_and_slide()
 	doubletap = false
+
+func save():
+	var save_dict = {
+		"pos_x" : position.x,
+		"pos_y" : position.y,
+	}
+	return save_dict
